@@ -1,4 +1,4 @@
-import Phaser from 'phaser';
+import Phaser, { Tilemaps } from 'phaser';
 
 var scene = new Phaser.Scene("game");
 const config = {
@@ -67,6 +67,16 @@ scene.update = function () {
     this.scoreText.setText('score: ' + this.score);
     this.end();
   };
+
+  if (this.dragon.y >= 500) {
+    // go up
+    this.dragon_move = -1;
+  } else if (this.dragon.y <= 100 ) {
+    // go down
+    this.dragon_move = 1;
+  }
+
+  this.dragon.y += this.dragon_move;
 }
 
 scene.end = function() {
