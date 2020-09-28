@@ -1,0 +1,27 @@
+{
+  "name": "tutorial-phaser-browsergame",
+  "version": "1.0.0",
+  "description": "A intermediate tutorial for phaser games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack --watch & live-server --port=8085"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsnazario/tutorial-phaser-browsergame.git"
+  },
+  "author": "rsnazario",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsnazario/tutorial-phaser-browsergame/issues"
+  },
+  "homepage": "https://github.com/rsnazario/tutorial-phaser-browsergame#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "phaser": "^3.24.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
